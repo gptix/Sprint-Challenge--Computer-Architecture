@@ -1,0 +1,30 @@
+
+
+
+# empty rows so it is easier to read line numbers
+# just subtract 10
+# rightmost digits don't have to be 'minus one'd
+
+# Test code for JEQ
+
+10000010 # LDI R0 8 # set up comparison # place value 8 in R0
+00000000
+00001000
+10000010 # LDI R1 8 # set up comparison # place value 9 in R1
+00000001
+00001001
+10000010 # LDI R2 0x0F # # place proper address in R2 for jump
+00000010
+00001111
+10100111 # CMP R0, R1 # should NOT be true - (clears EQ flag)
+00000000
+00000001
+01010101 # JEQ # check EQ flag, if set, jump to address in R2
+00000010 # R2 for jump address
+00000001 # HLT # should get here
+10000010 # LDI R0, 34 # val to be printed # should NOT get here
+00000000
+00100010 
+01000111 # PRN R0
+00000000
+00000001 # HLT

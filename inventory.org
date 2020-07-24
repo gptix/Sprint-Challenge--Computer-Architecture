@@ -1,0 +1,71 @@
+Files present:
+
+.
+├── asm - A set of files that converts LS-8 source code and converts to LS-8 'binary'.  Also, a number of subroutines.
+│   ├── asm.js
+│   ├── asm.py
+│   ├── buildall
+│   ├── call.asm
+│   ├── interrupts.asm
+│   ├── keyboard.asm
+│   ├── mult.asm
+│   ├── print8.asm
+│   ├── printstr.asm
+│   ├── README.md - reference
+│   ├── sctest.asm
+│   ├── stack.asm
+│   └── stackoverflow.asm
+├── FAQ.md - A set of FAQ's and answers
+├── #inventory.org#
+├── ls8
+│   ├── cpu.py ##### - Contains definition of CPU class.
+│   ├── examples - A number of examples using the LS-8 code
+│   │   ├── call.ls8
+│   │   ├── interrupts.ls8
+│   │   ├── keyboard.ls8
+│   │   ├── mult.ls8
+│   │   ├── print8.ls8
+│   │   ├── printstr.ls8
+│   │   ├── sctest.ls8
+│   │   ├── stack.ls8
+│   │   └── stackoverflow.ls8
+│   ├── ls8.py #####    - instantiates CPU class, starts the instance.
+│   └── README.md ##### - reference
+├── LS8-cheatsheet.md - quick reference
+├── LS8-spec.md - specs for internal structure of an LS-8
+└── README.md - reference
+
+
+* Implemented and not yet implemented
+
+ls8.py - 
+
+implemented:  
+load() - instantiates, loads, and runs an LS-8 CPU
+
+not implemented:
+
+(nothing now)
+
+
+
+cpu.py - 
+
+implemented:
+
+load()
+alu()
+trace()
+ 
+
+not yet implemented:
+__init__()
+
+
+Note what has been implemented, and what hasn't.
+Read this whole file.
+Skim the spec.
+
+
+
+

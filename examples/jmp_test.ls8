@@ -1,0 +1,23 @@
+
+
+
+
+
+# empty rows so it is easier to read line numbers
+# just subtract 10
+# rightmost digits don't have to be 'minus one'd
+
+# Test code for JMP
+
+10000010 # LDI R0, 33 # val to be printed
+00000000
+00100001
+10000010 # LDI R1, 9 # load R1 as jump address
+00000001
+00001001
+01010100 # JMP R1
+00000001
+00000001 # HLT # should not get here
+01000111 # PRN, R0 (should contain 33)
+00000000
+00000001 # HLT # should not get here
